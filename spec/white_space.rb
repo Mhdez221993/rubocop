@@ -1,6 +1,4 @@
-require_relative '../lib/white_space'
+# require_relative '../lib/white_space'
 
-module TicTacToe
-  describe White_space do
-  end
-end
+# describe White_space do
+# end

@@ -1,7 +1,4 @@
-require_relative '../lib/missing_tags'
+# require_relative '../lib/missing_tags'
 
-module TicTacToe
-  describe Missing_tags do
-    
-  end
-end
+# describe Missing_tags do
+# end

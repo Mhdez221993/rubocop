@@ -1,10 +1,7 @@
-module TicTacToe
-  class Empty_line
-    attr_accessor :player
+class EmptyLine
+  attr_accessor :file
 
-    def initialize(player)
-      @player = player
-      @board = board
-    end
+  def initialize(file)
+    @file = file
   end
 end

@@ -1,6 +1,4 @@
-require_relative '../lib/missing_end'
+# require_relative '../lib/missing_end'
 
-module TicTacToe
-  describe Missing_end do
-  end
-end
+# describe Missing_end do
+# end
