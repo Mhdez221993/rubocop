@@ -5,6 +5,7 @@ require_relative '../lib/offenses'
 require_relative '../lib/empty_file'
 require_relative '../lib/last_empty_line'
 require_relative '../lib/trailing_space'
+require_relative '../lib/indentation'
 
 class_offense = Offenses.new
 
@@ -21,6 +22,7 @@ Find.find('.') do |file|
   EmptyFile.new(file, class_offense) if ignore_git_file(file)
   LastEmptyLine.new(file, class_offense) if ignore_git_file(file)
   TrailingSpace.new(file, class_offense) if ignore_git_file(file)
+  Indentation.new(file, class_offense) if ignore_git_file(file)
 end
 
 puts "\n"
