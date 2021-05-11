@@ -24,11 +24,7 @@ Find.find('.') do |file|
 end
 
 puts "\n"
-num_offenses = if class_offense.count_offenses.positive?
-                 class_offense.count_offenses.to_s.red + ' offense'.red
-               else
-                 'no offenses'.green
-               end
+num = class_offense.count_offenses
 class_offense.print_offenses
 puts "\n"
-puts "#{num_of_files} files inspected, #{num_offenses} detected"
+puts "#{num_of_files} files inspected, #{num.positive? ? num.to_s + ' offense'.red : 'no offense'.green} detected"
