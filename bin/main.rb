@@ -7,22 +7,18 @@ require_relative '../lib/trailing_space'
 require_relative '../lib/indentation'
 
 class_offense = Offenses.new
-def ignore_git_file(str)
-  str.index('.rb')
-end
-
-num_of_files = Dir["**/*\.rb"].length
-puts "Inspecting #{num_of_files} files"
+files = ARGV.empty? ? Dir["**/*\.rb"] : ARGV
+puts "Inspecting #{files.size} files"
 puts "\n"
 puts 'Offenses:'
-Find.find('.') do |file|
-  EmptyFile.new(file, class_offense) if ignore_git_file(file)
-  # TrailingSpace.new(file, class_offense) if ignore_git_file(file)
-  # Indentation.new(file, class_offense) if ignore_git_file(file)
+files.each do |file|
+  EmptyFile.new(file, class_offense)
+  TrailingSpace.new(file, class_offense)
+  Indentation.new(file, class_offense)
 end
 
 puts "\n"
 num = class_offense.count_offenses
 class_offense.print_offenses
 puts "\n"
-puts "#{num_of_files} files inspected, #{num.positive? ? num.to_s + ' offense'.red : 'no offense'.green} detected"
+puts "#{files.size} files inspected, #{num.positive? ? num.to_s + ' offense'.red : 'no offense'.green} detected"
