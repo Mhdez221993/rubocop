@@ -20,7 +20,7 @@ class Indentation
         class_offense.push_offenses(offenses) if outer != space
       elsif find_else_keyword(line)
         class_offense.push_offenses(offenses) if outer - 2 != space
-      elsif !line.empty?
+      elsif !line.split.empty?
         class_offense.push_offenses(offenses) if outer != space
       end
     end
