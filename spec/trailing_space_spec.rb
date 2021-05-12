@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../lib/trailing_space'
 require_relative '../lib/offenses'
 require 'colorize'

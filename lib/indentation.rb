@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Indentation
   attr_accessor :file, :class_offense
 

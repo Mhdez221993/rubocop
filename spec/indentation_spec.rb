@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../lib/indentation'
 require_relative '../lib/offenses'
 require 'colorize'

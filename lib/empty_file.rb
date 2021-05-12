@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class EmptyFile
   attr_accessor :file, :class_offense
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../lib/empty_file'
 require_relative '../lib/offenses'
 require 'colorize'
