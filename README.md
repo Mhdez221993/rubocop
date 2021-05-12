@@ -53,15 +53,77 @@ To test the code, run  `rspec`  from root of the folder using terminal.
 ~~~ruby
 //Good Code
 
-  def call_check_last_line
-    check_last_line unless File.zero?(file)
-  end
+def call_check_last_line
+  check_last_line unless File.zero?(file)
+end
 
-  //Bad Code
+//Bad Code
 
-  def call_check_last_line
+def call_check_last_line
 check_last_line unless File.zero?(file)
-  end
+end
+~~~
+
+### Trailing spaces
+~~~ruby
+//Good Code
+
+def call_check_last_line
+  check_last_line unless File.zero?(file)
+end
+
+//Bad Code
+
+def call_check_last_line
+  check_last_line unless File.zero?(file)  
+end
+~~~
+
+### New line errors
+~~~ruby
+//Good Code
+
+def call_check_last_line
+  check_last_line unless File.zero?(file)
+end
+
+def call_check_last_line
+  check_last_line unless File.zero?(file)
+end
+
+//Bad Code
+
+def call_check_last_line
+  check_last_line unless File.zero?(file)  
+end
+def call_check_last_line
+  check_last_line unless File.zero?(file)
+end
+~~~
+
+
+### Last empty line
+~~~ruby
+//Good Code
+
+def call_check_last_line
+  check_last_line unless File.zero?(file)
+end
+
+def call_check_last_line
+  check_last_line unless File.zero?(file)
+end
+
+
+//Bad Code
+
+def call_check_last_line
+  check_last_line unless File.zero?(file)  
+end
+
+def call_check_last_line
+  check_last_line unless File.zero?(file)
+end
 ~~~
 
 
