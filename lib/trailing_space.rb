@@ -1,5 +1,3 @@
-require 'colorize'
-
 class TrailingSpace
   attr_accessor :file, :class_offense
 
