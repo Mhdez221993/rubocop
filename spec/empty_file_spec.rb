@@ -1,6 +1,5 @@
 require_relative '../lib/empty_file'
 require_relative '../lib/offenses'
-require 'colorize'
 
 describe EmptyFile do
   let(:offense) { Offenses.new }

@@ -1,3 +1,5 @@
+require 'colorize'
+
 class EmptyFile
   attr_accessor :file, :class_offense
 
