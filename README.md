@@ -50,24 +50,22 @@ To test the code, run  `rspec`  from root of the folder using terminal.
 ##  Good and bad code examples
 
 ### Wrong indentation
+~~~ruby
 //Good Code
 
-`
-def call_check_last_line
+  def call_check_last_line
     check_last_line unless File.zero?(file)
-end
-`
+  end
 
-//Bad Code
+  //Bad Code
 
-`
-def call_check_last_line
-    check_last_line unless File.zero?(file)
-end
-`
-  
+  def call_check_last_line
+check_last_line unless File.zero?(file)
+  end
+~~~
+
+
 ## Authors
-
 👤 **Moises Hernandez Coronado** 
 
 - GitHub: [@Mhdez221993](https://github.com/Mhdez221993) 
