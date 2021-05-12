@@ -1,5 +1,6 @@
 require_relative '../lib/empty_file'
 require_relative '../lib/offenses'
+require 'colorize'
 
 describe EmptyFile do
   let(:offense) { Offenses.new }
@@ -19,16 +20,16 @@ describe EmptyFile do
   describe '#check_if_empty_file' do
     it 'return return an array with the error message' do
       empty = EmptyFile.new('mock.rb', offense)
-      message = 'mock.rb:1:1: w: Lint/EmtyFile: Empty file detected'
-      expect(empty.check_if_empty_file).to eq [message, message]
+      empty.check_if_empty_file
+      expect(offense.count_offenses).to eq 2
     end
   end
 
   describe '#check_last_line' do
     it 'return return an array with the error message' do
       empty = EmptyFile.new('mock_line.rb', offense)
-      message = 'mock_line.rb:13:13: C: Layout/TrailingEmptyLines: Final newline missing'
-      expect(empty.check_last_line).to eq [message, message]
+      empty.check_last_line
+      expect(offense.count_offenses).to eq 2
     end
 
     it 'raise error if the file is empty' do
@@ -44,9 +45,9 @@ describe EmptyFile do
     end
 
     it 'call check_last_line if file is not empty' do
-      message = 'mock_line.rb:13:13: C: Layout/TrailingEmptyLines: Final newline missing'
       empty = EmptyFile.new('mock_line.rb', offense)
-      expect(empty.call_check_last_line).to eq [message, message]
+      empty.call_check_last_line
+      expect(offense.count_offenses).to eq 2
     end
   end
 end
