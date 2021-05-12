@@ -11,14 +11,18 @@ class EmptyFile
   end
 
   def check_if_empty_file
-    class_offense.push_offenses("#{file.blue}:1:1: w: Lint/EmtyFile: Empty file detected") if File.zero?(file)
+    if File.zero?(file)
+      class_offense.push_offenses("#{file.colorize(:blue)}:1:1: w: Lint/EmtyFile: Empty file detected")
+    end
   end
 
   def check_last_line
     message = 'C: Layout/TrailingEmptyLines: Final newline missing'
     f = File.readlines(file)
     line = f[f.size - 1]
-    class_offense.push_offenses("#{file.blue}:#{file.size + 1}:#{line.size + 1}: " + message) unless line =~ /\n$/
+    unless line =~ /\n$/
+      class_offense.push_offenses("#{file.colorize(:blue)}:#{file.size + 1}:#{line.size + 1}: " + message)
+    end
   end
 
   def call_check_last_line

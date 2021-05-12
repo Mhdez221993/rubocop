@@ -2,6 +2,7 @@ require_relative '../lib/offenses'
 
 describe Offenses do
   let(:offense) { Offenses.new([1, 3]) }
+  let(:colorize) { double }
   describe '.initialize' do
     it 'not raise error if no argument given' do
       expect { Offenses.new }.to_not raise_error
