@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+
 require 'find'
 require 'colorize'
 require_relative '../lib/offenses'

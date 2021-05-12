@@ -27,7 +27,7 @@ class Indentation
   end
 
   def find_method_or_class(str)
-    str =~ /(class\s)|(def\s)|(do\s)|(^\s*if)/
+    str =~ /(class\s)|(def\s)|(\sdo\s)|(^\s*if)|(\sdo$)/
   end
 
   def find_end_keyword(str)
