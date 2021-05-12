@@ -1,5 +1,6 @@
 require_relative '../lib/indentation'
 require_relative '../lib/offenses'
+require 'colorize'
 
 describe Indentation do
   let(:offense) { Offenses.new }

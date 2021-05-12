@@ -1,4 +1,5 @@
 require_relative '../lib/offenses'
+require 'colorize'
 
 describe Offenses do
   let(:offense) { Offenses.new([1, 3]) }
