@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class TrailingSpace
   attr_accessor :file, :class_offense
 

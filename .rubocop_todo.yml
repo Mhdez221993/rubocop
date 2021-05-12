@@ -1,31 +1,6 @@
 
-Metrics/AbcSize:
-  Max: 27
-
-# Offense count: 3
-# Configuration parameters: CountComments, CountAsOne, ExcludedMethods, IgnoredMethods.
-# IgnoredMethods: refine
-Metrics/BlockLength:
-  Max: 51
-
-
 Metrics/CyclomaticComplexity:
   Max: 10
 
-
-Metrics/MethodLength:
-  Max: 16
-
-
 Metrics/PerceivedComplexity:
   Max: 11
-
-
-Style/Documentation:
-  Exclude:
-    - 'spec/**/*'
-    - 'test/**/*'
-    - 'lib/empty_file.rb'
-    - 'lib/indentation.rb'
-    - 'lib/offenses.rb'
-    - 'lib/trailing_space.rb'

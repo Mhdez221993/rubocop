@@ -1,6 +1,4 @@
 #!/usr/bin/env ruby
-# frozen_string_literal: true
-
 require 'find'
 require 'colorize'
 require_relative '../lib/offenses'

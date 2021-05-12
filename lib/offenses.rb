@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Offenses
   attr_accessor :arr, :offenses
 
