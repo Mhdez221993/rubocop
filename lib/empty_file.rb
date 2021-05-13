@@ -19,6 +19,8 @@ class EmptyFile
     class_offense.push_offenses("#{file}:#{file.size + 1}:#{line.size + 1}: " + message) unless line =~ /\n$/
   end
 
+  private
+  
   def call_check_last_line
     check_last_line unless File.zero?(file)
   end

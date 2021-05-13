@@ -36,17 +36,4 @@ describe EmptyFile do
       expect { empty.check_last_line }.to raise_error(NoMethodError)
     end
   end
-
-  describe '#call_check_last_line' do
-    it 'return nil if the file is empty' do
-      empty = EmptyFile.new('mock.rb', offense)
-      expect(empty.call_check_last_line).to eq nil
-    end
-
-    it 'call check_last_line if file is not empty' do
-      empty = EmptyFile.new('mock_line.rb', offense)
-      empty.call_check_last_line
-      expect(offense.count_offenses).to eq 2
-    end
-  end
 end
