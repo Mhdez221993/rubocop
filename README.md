@@ -42,9 +42,11 @@ To test the code, run  `rspec`  from the root of the folder using the terminal.
     - On Mac => <code>Control + Option + Shift + T</code>
 
 2) Go to the directory where my_lin project is located, it will be the one where you cloned the repository. Execute the main.rb by typing:
-    - <code>bin/main.rb</code>
+    - <code>./bin/main.rb</code> this will inspect all the code in the actual directory
 
-3) you can provide a path to test a specific file or just run the previous command to test your actual directory.
+3) you can provide a path to test a specific file in the same directory or outside by typing:
+    - `./bin/main.rb some_file_in_my_directory.rb`
+    - `./bin/main.rb ../../some_file.rb` 
 
 
 ##  Good and bad code examples
