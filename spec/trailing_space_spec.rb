@@ -1,6 +1,5 @@
 require_relative '../lib/trailing_space'
 require_relative '../lib/offenses'
-require 'colorize'
 
 describe TrailingSpace do
   let(:offense) { Offenses.new }
