@@ -23,6 +23,8 @@ class TrailingSpace
     str =~ /(end$)/
   end
 
+  private
+
   def end_empty_keyword(str)
     str =~ /(end$)|(^$)/
   end

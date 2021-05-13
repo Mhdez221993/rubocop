@@ -39,16 +39,4 @@ describe TrailingSpace do
       expect(trailing.find_end_keyword(str)).to eq nil
     end
   end
-
-  describe '#end_empty_keyword' do
-    it 'return the the index of the mached regex' do
-      str = '          end'
-      expect(trailing.end_empty_keyword(str)).to eq 10
-    end
-
-    it 'return nil if no match the regex' do
-      str = 'hi'
-      expect(trailing.end_empty_keyword(str)).to eq nil
-    end
-  end
 end
