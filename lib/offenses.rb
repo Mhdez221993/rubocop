@@ -1,5 +1,5 @@
 class Offenses
-  attr_accessor :arr, :offenses
+  attr_accessor :arr
 
   def initialize(arr = [])
     @arr = arr
