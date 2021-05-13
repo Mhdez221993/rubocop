@@ -8,6 +8,8 @@ class EmptyFile
     call_check_last_line
   end
 
+  private
+
   def check_if_empty_file
     class_offense.push_offenses("#{file}:1:1: w: Lint/EmtyFile: Empty file detected") if File.zero?(file)
   end

@@ -19,6 +19,8 @@ class TrailingSpace
     end
   end
 
+  private
+
   def find_end_keyword(str)
     str =~ /(end$)/
   end
