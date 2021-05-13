@@ -1,12 +1,10 @@
 require_relative '../lib/empty_file'
 require_relative '../lib/offenses'
-require 'colorize'
 
 describe EmptyFile do
   let(:offense) { Offenses.new }
   before { File.write('mock.rb', '') && File.write('mock_line.rb', 'Hello World!') }
   after { File.delete('mock.rb') && File.delete('mock_line.rb') }
-  let(:colorize) { double }
 
   describe '.initialize' do
     it 'raise error if there is no argument' do

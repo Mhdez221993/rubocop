@@ -11,7 +11,7 @@ class Indentation
     outer = 0
     File.readlines(file, chomp: true).each_with_index do |line, index|
       space = line.index(/[^ ]/)
-      offenses = "#{file.colorize(:blue)}:#{index + 1} Layout/IndentationWidth: use spaces for indentation"
+      offenses = "#{file}:#{index + 1} Layout/IndentationWidth: use spaces for indentation"
       if find_method_or_class(line)
         class_offense.push_offenses(offenses) unless outer == space
         outer += 2

@@ -1,13 +1,11 @@
 require_relative '../lib/trailing_space'
 require_relative '../lib/offenses'
-require 'colorize'
 
 describe TrailingSpace do
   let(:offense) { Offenses.new }
   before { File.write('mock.rb', '') && File.write('mock_line.rb', 'Hello World! ') }
   after { File.delete('mock.rb') && File.delete('mock_line.rb') }
   let(:trailing) { TrailingSpace.new('mock_line.rb', offense) }
-  let(:colorize) { double }
 
   describe '.initialize' do
     it 'raise error if not argument is given' do

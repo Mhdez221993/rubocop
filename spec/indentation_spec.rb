@@ -7,7 +7,6 @@ describe Indentation do
   before { File.write('mock.rb', '') && File.write('mock_line.rb', ' Hello World!') }
   let(:indentation) { Indentation.new('mock_line.rb', offense) }
   after { File.delete('mock.rb') && File.delete('mock_line.rb') }
-  let(:colorize) { double }
 
   describe '.initialize' do
     it 'raise error' do
