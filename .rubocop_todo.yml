@@ -1,0 +1,20 @@
+
+Layout/LineLength:
+  Max: 131
+
+
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+
+Metrics/PerceivedComplexity:
+  Max: 11
+
+
+Style/GuardClause:
+  Exclude:
+    - 'lib/empty_file.rb'
+
+
+Layout/LineLength:
+  Max: 131
