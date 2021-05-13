@@ -20,7 +20,7 @@ class EmptyFile
   end
 
   private
-  
+
   def call_check_last_line
     check_last_line unless File.zero?(file)
   end

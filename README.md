@@ -1,6 +1,6 @@
 # Ruby Linter for Microverse capstone project
 
-This project was build in ruby to check ruby code, it is a linters for beginners, it provides feedback about errors or warning in code little by little.
+This project was built in ruby to check ruby code, it is a linters for beginners, it provides feedback about errors or warning in code little by little.
 It was developed following the best practices
 
 In this project we are looking for the following errors:
@@ -32,7 +32,7 @@ To run the tests locally :
 
 ### Run tests
 
-To test the code, run  `rspec`  from root of the folder using terminal.
+To test the code, run  `rspec`  from the root of the folder using the terminal.
 
 ## Instructions
 
@@ -44,7 +44,7 @@ To test the code, run  `rspec`  from root of the folder using terminal.
 2) Go to the directory where my_lin project is located, it will be the one where you cloned the repository. Execute the main.rb by typing:
     - <code>bin/main.rb</code>
 
-3) you can provide a path to test a specific file or just run the previos command to test your actual directory
+3) you can provide a path to test a specific file or just run the previous command to test your actual directory.
 
 
 ##  Good and bad code examples
