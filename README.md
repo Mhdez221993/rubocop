@@ -1,4 +1,4 @@
-# Ruby Linter
+# Rubocop
 
 This project was built in ruby to check ruby code, it is a linters for beginners, it provides feedback about errors or warning in code little by little.
 It was developed following the best practices
