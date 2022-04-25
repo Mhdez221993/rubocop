@@ -10,6 +10,10 @@ In this project we are looking for the following errors:
    - New line errors
    - Empty files
    - Last empty line
+   
+![linter1](https://user-images.githubusercontent.com/67757001/165179584-371a4314-504f-46f2-baa4-60171ede1667.jpeg)
+
+
 ## Built With
 - Ruby
 
