@@ -5,26 +5,27 @@ It was developed following the best practices
 
 In this project we are looking for the following errors:
 
-   - Wrong indentation
-   - Trailing spaces   
-   - New line errors
-   - Empty files
-   - Last empty line
-   
+- Wrong indentation
+- Trailing spaces
+- New line errors
+- Empty files
+- Last empty line
+
 ![linter1](https://user-images.githubusercontent.com/67757001/165179584-371a4314-504f-46f2-baa4-60171ede1667.jpeg)
 
+[Go Live](https://replit.com/join/nssqxwoaye-mhdez)
 
 ## Built With
+
 - Ruby
 
-## Getting Started
 ### Prerequisites
-   - Installed Ruby
+
+- Installed Ruby
 
 To get a local copy up and running follow these simple example steps.
 
 Go to  git clone git@github.com:Mhdez221993/my_lin.git
-
 
 ### Install RSpec
 
@@ -32,7 +33,7 @@ To run the tests locally :
 
 - To instal RSpec for testing please run the following command on your terminal:
 
-   ` gem install rspec`
+   `gem install rspec`
 
 ### Run tests
 
@@ -45,17 +46,17 @@ To test the code, run  `rspec`  from the root of the folder using the terminal.
     - On Linux => <code>ctrl + alt + T</code>
     - On Mac => <code>Control + Option + Shift + T</code>
 
-2) Go to the directory where my_lin project is located, it will be the one where you cloned the repository. Execute the main.rb by typing:
-    - <code>./bin/main.rb</code> this will inspect all the code in the actual directory
+2) In your terminal run:
+    - <code>./bin/main.rb</code> this will inspect all the files in the actual directory
 
 3) you can provide a path to test a specific file in the same directory or outside by typing:
     - `./bin/main.rb some_file_in_my_directory.rb`
-    - `./bin/main.rb ../../some_file.rb` 
+    - `./bin/main.rb ../../some_file.rb`
 
-
-##  Good and bad code examples
+## Good and bad code examples
 
 ### Wrong indentation
+
 ~~~ruby
 //Good Code
 
@@ -71,8 +72,29 @@ end
 ~~~
 
 ### Trailing spaces
+
 ~~~ruby
 //Good Code
+
+def call_check_last_line
+  check_last_line unless File.zero?(file)
+end
+
+//Bad Code
+
+def call_check_last_line
+  check_last_line unless File.zero?(file)
+end
+~~~
+
+### New line errors
+
+~~~ruby
+//Good Code
+
+def call_check_last_line
+  check_last_line unless File.zero?(file)
+end
 
 def call_check_last_line
   check_last_line unless File.zero?(file)
@@ -81,34 +103,15 @@ end
 //Bad Code
 
 def call_check_last_line
-  check_last_line unless File.zero?(file)  
-end
-~~~
-
-### New line errors
-~~~ruby
-//Good Code
-
-def call_check_last_line
   check_last_line unless File.zero?(file)
-end
-
-def call_check_last_line
-  check_last_line unless File.zero?(file)
-end
-
-//Bad Code
-
-def call_check_last_line
-  check_last_line unless File.zero?(file)  
 end
 def call_check_last_line
   check_last_line unless File.zero?(file)
 end
 ~~~
-
 
 ### Last empty line
+
 ~~~ruby
 //Good Code
 
@@ -124,7 +127,7 @@ end
 //Bad Code
 
 def call_check_last_line
-  check_last_line unless File.zero?(file)  
+  check_last_line unless File.zero?(file)
 end
 
 def call_check_last_line
@@ -132,13 +135,13 @@ def call_check_last_line
 end
 ~~~
 
-
 ## Authors
-👤 **Moises Hernandez Coronado** 
 
-- GitHub: [@Mhdez221993](https://github.com/Mhdez221993) 
-- Twitter: [@MoisesH42060050](https://twitter.com/MoisesH42060050) 
-- LinkedIn: [Moises Hernandez Coronado](https://www.linkedin.com/in/moises-hernandez-9bbb17145/) 
+👤 **Moises Hernandez Coronado**
+
+- GitHub: [@Mhdez221993](https://github.com/Mhdez221993)
+- Twitter: [@MoisesH42060050](https://twitter.com/MoisesH42060050)
+- LinkedIn: [Moises Hernandez Coronado](https://www.linkedin.com/in/moises-hernandez-9bbb17145/)
 
 ## Contributing
 
